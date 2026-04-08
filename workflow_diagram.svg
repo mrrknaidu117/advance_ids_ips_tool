@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <!-- Styles -->
+  <style>
+    .box { rx: 10; ry: 10; }
+    .blue-box { fill: #4285F4; }
+    .green-box { fill: #34A853; }
+    .red-box { fill: #EA4335; }
+    .orange-box { fill: #FBBC05; }
+    .diamond { fill: #FBBC05; }
+    .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+    .text { font-family: Arial, sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
+    .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #666; text-anchor: middle; }
+  </style>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Application Initialization -->
+  <rect class="box blue-box" x="200" y="20" width="200" height="60" />
+  <text class="text" x="300" y="55">Application Initialization</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="80" x2="300" y2="120" />
+  
+  <!-- User Authentication -->
+  <rect class="box blue-box" x="200" y="120" width="200" height="60" />
+  <text class="text" x="300" y="155">User Authentication</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="180" x2="300" y2="220" />
+  
+  <!-- Dashboard Loading -->
+  <rect class="box blue-box" x="200" y="220" width="200" height="60" />
+  <text class="text" x="300" y="255">Dashboard Loading</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="280" x2="300" y2="320" />
+  
+  <!-- Network Monitoring -->
+  <rect class="box blue-box" x="200" y="320" width="200" height="60" />
+  <text class="text" x="300" y="355">Network Monitoring</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="380" x2="300" y2="420" />
+  
+  <!-- Traffic Analysis -->
+  <rect class="box blue-box" x="200" y="420" width="200" height="60" />
+  <text class="text" x="300" y="455">Traffic Analysis</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="480" x2="300" y2="520" />
+  
+  <!-- Threat Detection -->
+  <polygon class="diamond" points="300,520 380,570 300,620 220,570" />
+  <text class="text" x="300" y="575">Threat Detected?</text>
+  
+  <!-- No Arrow -->
+  <line class="arrow" x1="220" y1="570" x2="120" y2="570" />
+  <text class="small-text" x="170" y="560">No</text>
+  
+  <!-- Continue Monitoring (No) -->
+  <rect class="box green-box" x="20" y="540" width="100" height="60" />
+  <text class="text" x="70" y="575">Continue Monitoring</text>
+  
+  <!-- Arrow back to Network Monitoring -->
+  <path class="arrow" d="M 70,540 L 70,350 L 200,350" fill="none" />
+  
+  <!-- Yes Arrow -->
+  <line class="arrow" x1="300" y1="620" x2="300" y2="660" />
+  <text class="small-text" x="310" y="640">Yes</text>
+  
+  <!-- Alert Generation -->
+  <rect class="box red-box" x="200" y="660" width="200" height="60" />
+  <text class="text" x="300" y="695">Alert Generation</text>
+  
+  <!-- Arrow -->
+  <line class="arrow" x1="300" y1="720" x2="300" y2="760" />
+  
+  <!-- Response Actions -->
+  <rect class="box orange-box" x="200" y="760" width="200" height="60" />
+  <text class="text" x="300" y="795">Response Actions</text>
+</svg>
