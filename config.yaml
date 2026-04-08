@@ -3,7 +3,7 @@
 mysql:
   host: localhost
   user: root
-  password: "@Mrrknaidu117"
+  password: "<PASSWORD>"
   database: ids_ips_db
   pool_size: 10
   port: 3306
@@ -16,7 +16,7 @@ EXPORT_PATH: exports
 
 # VirusTotal API Configuration
 virustotal:
-  api_key: "aafac4be3d5a88b60eb609d59f06b244a70a33a686f0f7e769ef3834dac3c0b0"
+  api_key: "<APIKEY>"
   enabled: true
   rate_limit: 4  # requests per minute for free tier
   timeout: 10
@@ -33,17 +33,7 @@ scanning:
   
 # Capture Interfaces (will auto-detect if interfaces_auto_detect is true)
 CAPTURE_INTERFACES:
-  - "\\Device\\NPF_{D6BC5DC0-C863-4820-9BB7-17B2CCD101D7}"
-  - "\\Device\\NPF_{699B11B0-B7D5-4593-8795-3B52FE625439}"
-  - "\\Device\\NPF_{83E278C1-D5B0-4459-A647-4CE48E64EB28}"
-  - "\\Device\\NPF_{B95ECAB7-5B68-4261-A1AE-1EDF7D0C6C8D}"
-  - "\\Device\\NPF_{FEDA6EE5-D9FB-4457-AC02-06D4A1FB8A1C}"
-  - "\\Device\\NPF_{CB2464A7-2776-486A-859F-255D0C5A3644}"
-  - "\\Device\\NPF_{5481776E-5EBF-4F82-8303-83D5A4D1C196}"
-  - "\\Device\\NPF_{36C30AA7-6217-449C-9E2B-1D8C6CED1507}"
-  - "\\Device\\NPF_{E34A43DD-0FB2-4ACD-BB78-AD72DA80016A}"
-  - "\\Device\\NPF_{44636C1D-4C9A-4A9B-A1A5-DFFB792B87CE}"
-  - "\\Device\\NPF_{BA68B496-2028-4D34-8BC4-DD2ED5509A48}"
+ "
 
 # Security Configuration
 security:
@@ -61,8 +51,7 @@ security:
   whitelist_enabled: true
   whitelist_ips:
     - "127.0.0.1"
-    - "::1"
-    - "192.168.1.1"  # Gateway
+    - "::1"  
     
 # Performance Settings
 performance:
